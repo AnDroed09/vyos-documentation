@@ -67,6 +67,13 @@ the other without any processing.
 Set a descriptive name for the XConnect interface.
 ```
 
+## Disable The Interface 
+
+```{cfgcmd} set interfaces vpp xconnect \<vppxconN\> disable 
+
+Disables point-to-point Layer 2 forwarding between the connected interfaces.
+```
+
 ## Configuration Examples
 ### Physical Interface XConnect
 
