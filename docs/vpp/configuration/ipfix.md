@@ -27,8 +27,15 @@ interfaces are included.
   are exported.
 - **inactive-timeout**: Duration (in seconds) after which idle flows
   are exported.
-- **collector \`\<ip>\` port \`\<port>\`**: IP and UDP port of the IPFIX collector.
-- **collector \`\<ip>\` source-address \`\<ip>\`**: Source address for flow export.
+- **collector \`\<ip>\` path-mtu \`\<path-mtu>\`**: Path MTU
+  (default: 512).
+- **collector \`\<ip>\` port \`\<port>\`**: IP and UDP port of
+  the IPFIX collector.
+- **collector \`\<ip>\` source-address \`\<ip>\`**: Source
+  address for flow export.
+- **collector \`\<ip>\` template-interval \`\<template-interval>\`**:
+  Interval in seconds between export templates (default: 20).
+- **collector \`\<ip>\` udp-checksum**: Allow UDP checksum.
 - **flowprobe-record \`\<l2|l3|l4>\`**: Layers to include in flow records.
 - **interface** `<interface>` **\[direction** `<rx|tx|both>`**\]**
   **\[flow-variant** `<ipv4|ipv6>`**\]**: Interfaces to monitor,
